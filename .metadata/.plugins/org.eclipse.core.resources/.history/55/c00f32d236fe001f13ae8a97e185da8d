@@ -1,0 +1,15 @@
+package main;
+
+import pojo.Doctor;
+
+public class DoctorMain {
+  public static void main(String[] args) {
+	Doctor doctor=new Doctor();
+	doctor.setId(10);
+	doctor.setName("Tom");
+	doctor.setSalary(10000000);
+	doctor.setSpecialization("Cardeologist");
+	doctor.setExperience(2);
+	
+}
+}

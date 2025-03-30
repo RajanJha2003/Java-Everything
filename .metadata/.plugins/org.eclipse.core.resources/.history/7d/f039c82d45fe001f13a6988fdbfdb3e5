@@ -1,0 +1,15 @@
+package operations;
+
+import java.util.ArrayList;
+
+import pojo.Billing;
+
+
+
+public interface BillingOperations {
+	void addPatient(ArrayList<Billing> billing);
+    void searchPatient(int id);
+    void getAllPatients();
+    void updatePatient(int id, Billing bill);
+    void removePatient(int id);
+}

@@ -1,0 +1,8 @@
+package main;
+import pojo.Doctor;
+public class Doctor {
+  public static void main(String[] args) {
+	Doctor doctor=new Doctor();
+	
+}
+}

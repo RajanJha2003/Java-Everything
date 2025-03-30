@@ -1,0 +1,11 @@
+package oopsandcollections;
+
+import java.util.ArrayList;
+
+public interface Operations {
+    void addData(ArrayList arr);
+    void updateData(String id, String name);
+    void deleteData(String id);
+    void searchData(String id);
+    void getData();
+}

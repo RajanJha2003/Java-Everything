@@ -1,0 +1,14 @@
+package main;
+
+import pojo.Patient;
+
+public class PatientMain {
+  public static void main(String[] args) {
+	Patient patient=new Patient();
+	patient.setId(10);
+	patient.setName("Tom");
+	patient.setAge(20);
+	patient.setDisease("Sick");
+	patient.setBillAmount(10000);
+}
+}

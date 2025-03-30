@@ -1,0 +1,53 @@
+package implementor;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import pojo.Medicine;
+import pojo.Patient;
+
+public class MedicineImp implements operations.MedicineOperations {
+	
+	ArrayList<Medicine> db=new ArrayList<Medicine>();
+	
+
+	@Override
+	public void addMedicine(ArrayList<Medicine> medicines) {
+		// TODO Auto-generated method stub
+		db.addAll(medicines);
+		
+	}
+
+	@Override
+	public void searchMedicine(int id) {
+		// TODO Auto-generated method stub
+		Iterator<Medicine> iterator=db.iterator();
+		while (iterator.hasNext()) {
+			Medicine medicine = (Medicine) iterator.next();
+			if(patient.getId()==id) {
+				System.out.println(patient);
+			}
+			
+		}
+		
+	}
+
+	@Override
+	public void getAllMedicines() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateMedicine(int id, Medicine Medicine) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeMedicine(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

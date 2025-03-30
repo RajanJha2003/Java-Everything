@@ -1,0 +1,25 @@
+package covariant;
+
+
+class Company{
+	String companyName="RJ Tech";
+	Company getDetails() {
+		System.out.println(companyName);
+		return new Company();
+	}
+	
+}
+
+class Emp extends Company {
+	
+	@Override
+	Emp getDetails() {
+		// TODO Auto-generated method stub
+		return super.getDetails();
+	}
+	
+}
+
+public class Main {
+
+}

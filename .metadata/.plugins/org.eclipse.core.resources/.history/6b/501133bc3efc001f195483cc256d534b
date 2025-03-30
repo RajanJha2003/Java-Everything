@@ -1,0 +1,19 @@
+package covariant;
+
+
+class Company{
+	String companyName="RJ Tech";
+	Company getDetails() {
+		System.out.println(companyName);
+		return new Company();
+	}
+	
+}
+
+class Emp extends Company {
+	
+}
+
+public class Main {
+
+}

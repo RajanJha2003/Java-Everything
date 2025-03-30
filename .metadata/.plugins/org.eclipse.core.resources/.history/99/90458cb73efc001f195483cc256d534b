@@ -1,0 +1,15 @@
+package covariant;
+
+
+class Company{
+	String companyName="RJ Tech";
+	Company getDetails() {
+		System.out.println(companyName);
+		return new Company();
+	}
+	
+}
+
+public class Main {
+
+}

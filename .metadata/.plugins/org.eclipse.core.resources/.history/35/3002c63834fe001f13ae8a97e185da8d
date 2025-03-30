@@ -1,0 +1,13 @@
+package operations;
+
+import java.util.ArrayList;
+
+import pojo.Doctor;
+
+public interface DoctorOperations {
+	 void addDoctor(ArrayList<Doctor> doctors);         // Create
+	    void getDoctor(int id);              // Read One
+	    List<Doctor> getAllDoctors();          // Read All
+	    void updateDoctor(int id, Doctor doc); // Update
+	    void removeDoctor(int id);             // Delete
+}

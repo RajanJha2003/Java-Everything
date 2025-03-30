@@ -1,0 +1,19 @@
+package exception_propogation;
+
+import java.io.IOException;
+
+
+
+class Emp{
+	void getData() throws IOException {
+		throw new IOException("Employee data not found");
+	}
+}
+
+
+class Company{
+	void getEmpData() throws IOException {
+		Emp emp=new Emp();
+		emp.getData();
+	}
+}

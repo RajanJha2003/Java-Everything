@@ -1,0 +1,51 @@
+package staticnonstatic;
+
+class Emp {
+    
+    String name = "Rajan";
+    int age = 25;
+    
+    
+    static String companyName = "RJ";
+    static String companyLocation = "Mumbai";
+
+    // Non-static method 1
+    void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+
+    // Non-static method 2
+    void showDetails() {
+        System.out.println("Employee Details - Name: " + name + ", Age: " + age);
+    }
+
+    // Static method 1
+    static void companyInfo() {
+        System.out.println("Company Name: " + companyName);
+        System.out.println("Location: " + companyLocation);
+    }
+
+    // Static method 2
+    static void showCompanyDetails() {
+        System.out.println("Company Details - Name: " + companyName + ", Location: " + location);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Emp emp = new Emp();
+        
+        // Accessing non-static variables and methods
+        System.out.println(emp.name);
+        System.out.println(emp.age);
+        emp.displayInfo();
+        emp.showDetails();
+
+        // Accessing static variables and methods
+        System.out.println(Emp.companyName);
+        System.out.println(Emp.location);
+        Emp.companyInfo();
+        Emp.showCompanyDetails();
+    }
+}

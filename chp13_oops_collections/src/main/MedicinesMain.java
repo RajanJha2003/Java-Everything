@@ -1,0 +1,68 @@
+package main;
+
+import java.util.ArrayList;
+
+import implementor.MedicineImp;
+import pojo.Medicine;
+
+public class MedicinesMain {
+  public static void main(String[] args) {
+	  Medicine medicine1 = new Medicine();
+      medicine1.setId(101);
+      medicine1.setMedicineName("Paracetamol");
+      medicine1.setQuantity(50);
+      medicine1.setPrice(10.5);
+      medicine1.setExpiryDate("2025-12-31");
+      
+      Medicine medicine2 = new Medicine();
+      medicine2.setId(102);
+      medicine2.setMedicineName("Ibuprofen");
+      medicine2.setQuantity(30);
+      medicine2.setPrice(8.0);
+      medicine2.setExpiryDate("2026-06-30");
+      
+      Medicine medicine3 = new Medicine();
+      medicine3.setId(103);
+      medicine3.setMedicineName("Amoxicillin");
+      medicine3.setQuantity(20);
+      medicine3.setPrice(12.0);
+      medicine3.setExpiryDate("2024-11-15");
+      
+      Medicine medicine4 = new Medicine();
+      medicine4.setId(104);
+      medicine4.setMedicineName("Cough Syrup");
+      medicine4.setQuantity(40);
+      medicine4.setPrice(15.0);
+      medicine4.setExpiryDate("2025-09-20");
+      
+      ArrayList<Medicine> arrayList=new ArrayList<Medicine>();
+      arrayList.add(medicine1);
+      arrayList.add(medicine2);
+      arrayList.add(medicine3);
+      arrayList.add(medicine4);
+      
+      MedicineImp medicineImp=new MedicineImp();
+      medicineImp.addMedicine(arrayList);
+      medicineImp.getAllMedicines();
+      
+     System.out.println("------------------------------------------");
+     
+     Medicine medicine5 = new Medicine();
+     medicine5.setId(103);
+     medicine5.setMedicineName("Amox");
+     medicine5.setQuantity(20);
+     medicine5.setPrice(12.0);
+     medicine5.setExpiryDate("2024-11-15");
+     
+     medicineImp.updateMedicine(103, medicine5);
+     medicineImp.getAllMedicines();
+     
+     System.out.println("-------------------------------");
+     medicineImp.searchMedicine(104);
+     
+     System.out.println("-------------------------------");
+     medicineImp.removeMedicine(104);
+     medicineImp.getAllMedicines();
+     
+}
+}

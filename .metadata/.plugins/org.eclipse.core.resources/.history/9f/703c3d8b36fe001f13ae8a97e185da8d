@@ -1,0 +1,8 @@
+package main;
+
+public class DoctorMain {
+  public static void main(String[] args) {
+	DoctorMain doctor=new DoctorMain();
+	
+}
+}

@@ -1,0 +1,40 @@
+package implementor;
+
+import java.util.ArrayList;
+
+import pojo.Staff;
+
+public class StaffImp implements operations.StaffOperations {
+	ArrayList<Staff> arrayList=new ArrayList<Staff>()
+
+	@Override
+	public void addStaff(ArrayList<Staff> Staff) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void searchStaff(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getAllStaffs() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateStaff(int id, Staff bill) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeStaff(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

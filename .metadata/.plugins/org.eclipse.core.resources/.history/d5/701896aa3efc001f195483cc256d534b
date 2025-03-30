@@ -1,0 +1,11 @@
+package covariant;
+
+
+class Company{
+	String companyName="RJ Tech";
+	
+}
+
+public class Main {
+
+}

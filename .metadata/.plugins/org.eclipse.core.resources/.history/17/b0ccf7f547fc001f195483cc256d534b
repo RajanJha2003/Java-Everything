@@ -1,0 +1,9 @@
+package oopsandcollections;
+
+public interface Operations {
+    void add(Object obj);
+    void update(String id, Object updatedObj);
+    void delete(String id);
+    Object search(String id);
+    List<Object> getAll();
+}

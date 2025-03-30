@@ -1,0 +1,62 @@
+package implementor;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import pojo.Billing;
+import pojo.Medicine;
+
+public class BillingImp implements operations.BillingOperations {
+	
+	ArrayList<Billing> db=new ArrayList<Billing>();
+
+	@Override
+	public void addBilling(ArrayList<Billing> billing) {
+		// TODO Auto-generated method stub
+		db.addAll(billing);
+		System.out.println("inserted");
+		
+	}
+
+	@Override
+	public void searchBilling(int id) {
+		// TODO Auto-generated method stub
+		Iterator<Billing> iterator=db.iterator();
+		while (iterator.hasNext()) {
+			Billing billing = (Billing) iterator.next();
+			if(billing.getId()==id) {
+				System.out.println(billing);
+			}
+			
+		}
+		
+	}
+
+	@Override
+	public void getAllBillings() {
+		// TODO Auto-generated method stub
+		Iterator<Billing> iterator=db.iterator();
+		while (iterator.hasNext()) {
+			Billing billing = (Billing) iterator.next();
+			System.out.println(billing);
+			
+		}
+		
+	}
+
+	@Override
+	public void updateBilling(int id, Billing bill) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeBilling(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+	
+
+}

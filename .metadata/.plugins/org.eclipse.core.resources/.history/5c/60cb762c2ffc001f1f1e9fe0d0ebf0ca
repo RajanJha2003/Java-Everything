@@ -1,0 +1,22 @@
+package final_keyword;
+
+final class Emp{
+	final int empId=10;
+	final String empName="Tom";
+	
+	
+	 final void displayInfo() {
+		// TODO Auto-generated method stub
+		System.out.println(empId);
+
+	}
+}
+
+
+
+
+
+
+public class Main {
+
+}
